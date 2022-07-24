@@ -1,4 +1,4 @@
-package org.example.domain;
+package org.example.InfoAboutPerson;
 
 public class University {
     private Long university;

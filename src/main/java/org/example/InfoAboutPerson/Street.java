@@ -1,6 +1,7 @@
-package org.example.domain;
+package org.example.InfoAboutPerson;
 
-public class Street {
+public class Street
+{
     private Long streetCode;
     private String streetName;
 

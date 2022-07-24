@@ -1,14 +1,14 @@
-package org.example.domain;
+package org.example.InfoAboutPerson;
 
-public class RegisterOffice {
+public class PassportOffice {
     private Long officeId;
     private String officeAreaId;
     private String officeName;
 
-    public RegisterOffice(){
+    public PassportOffice(){
     }
 
-    public RegisterOffice(Long officeId, String officeAreaId, String officeName) {
+    public PassportOffice(Long officeId, String officeAreaId, String officeName) {
         this.officeId = officeId;
         this.officeAreaId = officeAreaId;
         this.officeName = officeName;
