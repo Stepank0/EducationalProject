@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c79286de-3c00-4f4b-932e-8dd6922ce5d2" name="Changes" comment="basic application logic">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DataAccessObject/DirectoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SaveStudentOrder.java" afterDir="false" />
+    <list default="true" id="c79286de-3c00-4f4b-932e-8dd6922ce5d2" name="Changes" comment="added directory data access object">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DataAccessObject/DictionaryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Exeption/DaoException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/education.sql" beforeDir="false" afterPath="$PROJECT_DIR$/education.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Adult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/Adult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/Child.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/CountryArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/CountryArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/PassportOffice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/PassportOffice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/RegisterOffice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/RegisterOffice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Street.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/Street.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/StudentOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/StudentOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/StudentOrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/StudentOrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/University.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/University.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataAccessObject/DirectoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataAccessObject/DictionaryDaoImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -102,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658402036717</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added directory data access object">
+      <created>1658693495567</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658693495567</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="basic application logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic application logic" />
+    <MESSAGE value="added directory data access object" />
+    <option name="LAST_COMMIT_MESSAGE" value="added directory data access object" />
   </component>
 </project>
