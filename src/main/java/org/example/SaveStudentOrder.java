@@ -1,18 +1,20 @@
 package org.example;
 
+import org.example.DataAccessObject.DictionaryDaoImpl;
 import org.example.InfoAboutPerson.*;
 
 import java.sql.*;
 import java.time.LocalDate;
+import java.util.List;
 
 public class SaveStudentOrder {
 
     public static void main(String[] args) throws Exception {
-
-
-
+        List<Street> d =new DictionaryDaoImpl().findStreet("first");
+        for(Street s: d){
+            System.out.println(s.getStreetName());
+        }
     }
-
 
     static long saveStudentOrder(StudentOrder studentOrder)
     {

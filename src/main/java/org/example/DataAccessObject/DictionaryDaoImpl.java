@@ -2,6 +2,7 @@ package org.example.DataAccessObject;
 
 import org.example.Exeption.DaoException;
 import org.example.InfoAboutPerson.Street;
+import org.example.config.Config;
 
 import java.sql.*;
 import java.util.LinkedList;
@@ -14,8 +15,9 @@ public class DictionaryDaoImpl implements DictionaryDao
 
     private Connection getConnection() throws SQLException {
         Connection con = DriverManager.getConnection(
-                "jdbc:postgresql://localhost:5432/postgres",
-                "postgres", "21791");
+                Config.getProperty(Config.DB_URL),
+                Config.getProperty(Config.DB_LOGIN),
+                Config.getProperty(Config.DB_PASSWORD));
         return con;
     }
 
@@ -26,7 +28,7 @@ public class DictionaryDaoImpl implements DictionaryDao
         try (Connection con = getConnection();
              PreparedStatement stmt = con.prepareStatement(GET_STREET))
         {
-            stmt.setString(1, pattern);
+            stmt.setString(1, "%" + pattern + "%");
             ResultSet rs = stmt.executeQuery();
             while (rs.next()) {
                 Street str = new Street(rs.getLong("street_code"), rs.getString("street_name"));
