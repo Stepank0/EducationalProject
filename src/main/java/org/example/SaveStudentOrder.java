@@ -10,10 +10,19 @@ import java.util.List;
 public class SaveStudentOrder {
 
     public static void main(String[] args) throws Exception {
-        List<Street> d =new DictionaryDaoImpl().findStreet("first");
+        List<Street> d = new DictionaryDaoImpl().findStreet("про");
         for(Street s: d){
             System.out.println(s.getStreetName());
         }
+        List<PassportOffice> po = new DictionaryDaoImpl().findPassportOffice("010010000000");
+        for( PassportOffice p : po){
+            System.out.println(p.getOfficeName());
+        }
+        List<RegisterOffice> ro = new DictionaryDaoImpl().findRegisterOffice("010010000000");
+        for(RegisterOffice r: ro){
+            System.out.println(r.getOfficeName());
+        }
+
     }
 
     static long saveStudentOrder(StudentOrder studentOrder)

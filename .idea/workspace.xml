@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c79286de-3c00-4f4b-932e-8dd6922ce5d2" name="Changes" comment="added implementations, made exception processing">
-      <change afterPath="$PROJECT_DIR$/src/dao.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/config/Config.java" afterDir="false" />
+    <list default="true" id="c79286de-3c00-4f4b-932e-8dd6922ce5d2" name="Changes" comment="add config">
+      <change afterPath="$PROJECT_DIR$/student_data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education.sql" beforeDir="false" afterPath="$PROJECT_DIR$/education.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataAccessObject/DictionaryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataAccessObject/DictionaryDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataAccessObject/DictionaryDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataAccessObject/DictionaryDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SaveStudentOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SaveStudentOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/Config.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658695275563</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add config">
+      <created>1658766500199</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658766500199</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +162,7 @@
     <MESSAGE value="basic application logic" />
     <MESSAGE value="added directory data access object" />
     <MESSAGE value="added implementations, made exception processing" />
-    <option name="LAST_COMMIT_MESSAGE" value="added implementations, made exception processing" />
+    <MESSAGE value="add config" />
+    <option name="LAST_COMMIT_MESSAGE" value="add config" />
   </component>
 </project>
