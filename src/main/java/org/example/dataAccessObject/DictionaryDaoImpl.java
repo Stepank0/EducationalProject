@@ -1,9 +1,10 @@
-package org.example.DataAccessObject;
+package org.example.dataAccessObject;
 
-import org.example.Exeption.DaoException;
-import org.example.InfoAboutPerson.PassportOffice;
-import org.example.InfoAboutPerson.RegisterOffice;
-import org.example.InfoAboutPerson.Street;
+import org.example.exeption.DaoException;
+import org.example.infoAboutPerson.CountryArea;
+import org.example.infoAboutPerson.PassportOffice;
+import org.example.infoAboutPerson.RegisterOffice;
+import org.example.infoAboutPerson.Street;
 import org.example.config.Config;
 
 import java.sql.*;
@@ -18,7 +19,9 @@ public class DictionaryDaoImpl implements DictionaryDao
             " from passport_office where p_office_area_id = ?";
     private static final String GET_REGISTER = "select * " +
             " from register_office where r_office_area_id = ?";
-
+    private static final  String GET_AREA = "select * " +
+            " from country_struct where area_id like ? and area_id <> ?";
+    //TODO refactoring - make on method
     private Connection getConnection() throws SQLException {
         Connection con = DriverManager.getConnection(
                 Config.getProperty(Config.DB_URL),
@@ -91,4 +94,44 @@ public class DictionaryDaoImpl implements DictionaryDao
         }
         return result;
     }
+
+    @Override
+    public List<CountryArea> findAreas(String areaId) throws DaoException {
+        List<CountryArea> result = new LinkedList<>();
+
+        try (Connection con = getConnection();
+             PreparedStatement stmt = con.prepareStatement(GET_AREA)) {
+
+            String param1 = buildParam(areaId);
+            String param2 = areaId == null ? "" : areaId;
+
+            stmt.setString(1, param1);
+            stmt.setString(2, param2);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                CountryArea str = new CountryArea(
+                        rs.getString("area_id"),
+                        rs.getString("area_name"));
+                result.add(str);
+            }
+        } catch (SQLException ex) {
+            throw new DaoException(ex);
+        }
+        return result;
+    }
+
+    private String buildParam(String areaId) throws SQLException {
+        if (areaId == null || areaId.trim().isEmpty()) {
+            return "__0000000000";
+        } else if (areaId.endsWith("0000000000")) {
+            return areaId.substring(0, 2) + "___0000000";
+        } else if (areaId.endsWith("0000000")) {
+            return areaId.substring(0, 5) + "___0000";
+        } else if (areaId.endsWith("0000")) {
+            return areaId.substring(0, 8) + "____";
+        }
+        throw new SQLException("Invalid parameter 'areaId':" + areaId);
+    }
+
+
 }

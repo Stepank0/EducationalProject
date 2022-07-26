@@ -1,14 +1,14 @@
-package org.example.InfoAboutPerson;
+package org.example.infoAboutPerson;
 
-public class PassportOffice {
+public class RegisterOffice {
     private Long officeId;
     private String officeAreaId;
     private String officeName;
 
-    public PassportOffice(){
+    public RegisterOffice(){
     }
 
-    public PassportOffice(Long officeId, String officeAreaId, String officeName) {
+    public RegisterOffice(Long officeId, String officeAreaId, String officeName) {
         this.officeId = officeId;
         this.officeAreaId = officeAreaId;
         this.officeName = officeName;

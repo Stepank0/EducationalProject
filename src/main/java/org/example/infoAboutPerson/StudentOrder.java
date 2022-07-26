@@ -1,4 +1,4 @@
-package org.example.InfoAboutPerson;
+package org.example.infoAboutPerson;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

@@ -1,4 +1,4 @@
-package org.example.Exeption;
+package org.example.exeption;
 
 public class DaoException extends Exception
 {

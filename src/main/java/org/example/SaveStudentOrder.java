@@ -1,27 +1,52 @@
 package org.example;
 
-import org.example.DataAccessObject.DictionaryDaoImpl;
-import org.example.InfoAboutPerson.*;
+import org.example.dataAccessObject.StudentOrderDaoImpl;
+import org.example.dataAccessObject.StudentOrderDao;
+import org.example.infoAboutPerson.*;
 
-import java.sql.*;
 import java.time.LocalDate;
-import java.util.List;
 
 public class SaveStudentOrder {
 
     public static void main(String[] args) throws Exception {
-        List<Street> d = new DictionaryDaoImpl().findStreet("про");
-        for(Street s: d){
-            System.out.println(s.getStreetName());
-        }
-        List<PassportOffice> po = new DictionaryDaoImpl().findPassportOffice("010010000000");
-        for( PassportOffice p : po){
-            System.out.println(p.getOfficeName());
-        }
-        List<RegisterOffice> ro = new DictionaryDaoImpl().findRegisterOffice("010010000000");
-        for(RegisterOffice r: ro){
-            System.out.println(r.getOfficeName());
-        }
+//        List<Street> d = new DictionaryDaoImpl().findStreet("про");
+//        for(Street s: d){
+//            System.out.println(s.getStreetName());
+//        }
+//        List<PassportOffice> po = new DictionaryDaoImpl().findPassportOffice("010010000000");
+//        for( PassportOffice p : po){
+//            System.out.println(p.getOfficeName());
+//        }
+//        List<RegisterOffice> ro = new DictionaryDaoImpl().findRegisterOffice("010010000000");
+//        for(RegisterOffice r: ro){
+//            System.out.println(r.getOfficeName());
+//        }
+//        List<CountryArea> ca1 = new DictionaryDaoImpl().findAreas("");
+//        for(CountryArea c: ca1){
+//            System.out.println(c.getAreaId() + ":" + c.getAreaName());
+//        }
+//        System.out.println("----->");
+//        List<CountryArea> ca2 = new DictionaryDaoImpl().findAreas("020000000000");
+//        for(CountryArea c: ca2){
+//            System.out.println(c.getAreaId() + ":" + c.getAreaName());
+//        }
+//        System.out.println("----->");
+//        List<CountryArea> ca3 = new DictionaryDaoImpl().findAreas("020010000000");
+//        for(CountryArea c: ca3){
+//            System.out.println(c.getAreaId() + ":" + c.getAreaName());
+//        }
+//        System.out.println("----->");
+//        List<CountryArea> ca4 = new DictionaryDaoImpl().findAreas("020010010000");
+//        for(CountryArea c: ca4){
+//            System.out.println(c.getAreaId() + ":" + c.getAreaName());
+//        }
+
+
+        StudentOrder s = buildStudentOrder(10);
+        StudentOrderDao dao = new StudentOrderDaoImpl();
+        Long id = dao.saveStudentOrder(s);
+        System.out.println(id);
+
 
     }
 

@@ -1,4 +1,4 @@
-package org.example.InfoAboutPerson;
+package org.example.infoAboutPerson;
 
 public class Address {
     private String postCode;
