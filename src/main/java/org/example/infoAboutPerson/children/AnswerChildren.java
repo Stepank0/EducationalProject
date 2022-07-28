@@ -1,2 +1,5 @@
-package org.example.infoAboutPerson.children;public class AnswerChildren {
+package org.example.infoAboutPerson.children;
+public class AnswerChildren
+{
+
 }

@@ -1,2 +1,5 @@
-package org.example.infoAboutPerson.student;public class AnswerStudent {
+package org.example.infoAboutPerson.student;
+public class AnswerStudent
+{
+
 }

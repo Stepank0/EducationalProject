@@ -7,7 +7,7 @@ import org.example.infoAboutPerson.Child;
 import org.example.infoAboutPerson.Person;
 import org.example.infoAboutPerson.register.CityRegisterResponse;
 
-public class FakeCityRegisterChecker
+public class FakeCityRegisterChecker implements CityRegisterChecker
 {
     private static final String GOOD_1 = "1000";
     private static final String GOOD_2 = "2000";

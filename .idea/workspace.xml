@@ -4,40 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c79286de-3c00-4f4b-932e-8dd6922ce5d2" name="Changes" comment="add insert request&#10;add manual transaction">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/StudentOrderValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dataAccessObject/StudentOrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dataAccessObject/StudentOrderDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exeption/CityRegisterException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exeption/TransportException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/children/AnswerChildren.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/register/AnswerCityRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/register/AnswerCityRegisterItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/register/CityRegisterResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/student/AnswerStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/wedding/AnswerWedding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mail/MailSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/validator/CityRegisterValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/validator/register/CityRegisterChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/validator/register/FakeCityRegisterChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/validator/register/RealCityRegisterChecker.java" afterDir="false" />
+    <list default="true" id="c79286de-3c00-4f4b-932e-8dd6922ce5d2" name="Changes" comment="add insert request&#10;add manual transaction&#10;add validator">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/validator/ChildrenValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/validator/StudentValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/validator/WeddingValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/education.sql" beforeDir="false" afterPath="$PROJECT_DIR$/studentProjectCreateTable.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataAccessObject/DictionaryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dataAccessObject/DictionaryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataAccessObject/DictionaryDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dataAccessObject/DictionaryDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Exeption/DaoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/exeption/DaoException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/Adult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/Adult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/Child.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/CountryArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/CountryArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/PassportOffice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/PassportOffice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/RegisterOffice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/RegisterOffice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/Street.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/Street.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/StudentOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/StudentOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/StudentOrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/StudentOrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InfoAboutPerson/University.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/University.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SaveStudentOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SaveStudentOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StudentOrderValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StudentOrderValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/children/AnswerChildren.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/children/AnswerChildren.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/student/AnswerStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/student/AnswerStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/wedding/AnswerWedding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/infoAboutPerson/wedding/AnswerWedding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mail/MailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mail/MailSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/validator/CityRegisterValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/validator/CityRegisterValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/validator/register/FakeCityRegisterChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/validator/register/FakeCityRegisterChecker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658783623013</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add insert request&#10;add manual transaction&#10;add validator">
+      <created>1658852863261</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658852863261</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +181,7 @@
     <MESSAGE value="added implementations, made exception processing" />
     <MESSAGE value="add config" />
     <MESSAGE value="update cod, add script sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="update cod, add script sql" />
+    <MESSAGE value="add insert request&#10;add manual transaction&#10;add validator" />
+    <option name="LAST_COMMIT_MESSAGE" value="add insert request&#10;add manual transaction&#10;add validator" />
   </component>
 </project>
